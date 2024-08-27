@@ -69,6 +69,7 @@ for container in containers:
         # Definir el nuevo nombre del archivo con la extensión original
         new_file = os.path.join(download_folder, f"precios_{file_date}{file_extension}")
         
+        
         # Descargar el archivo
         response = requests.get(href, stream=True)
         with open(original_file, "wb") as file:
